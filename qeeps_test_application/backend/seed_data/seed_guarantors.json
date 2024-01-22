@@ -1,0 +1,31 @@
+[
+  {
+    "_id": { "$oid": "60b1f8aabd23be4acdaa58f9" },
+    "firstName": "Sandrine",
+    "lastName": "Brichard",
+    "email": "sandrine.bricard@mail.com",
+    "dateOfBirth": "1975-11-05",
+    "address": "654 Elm Place",
+    "monthlyRevenues": 4700,
+    "job": "Chef d'entreprise",
+    "maritalStatus": "married",
+    "contractType": "CDI",
+    "otherRevenues": 0,
+    "phoneNumber": "+33 3 43 32 22 15"
+  },
+  {
+    "_id": { "$oid": "60b1f8aaad23be4acdaa58fa" },
+    "firstName": "Michel",
+    "lastName": "Bricard",
+    "email": "michel.bricard@mail.com",
+    "dateOfBirth": "1960-03-30",
+    "address": "321 Birch Road",
+    "monthlyJobRevenues": 7000,
+    "job": "Medecin",
+    "contractType": "Freelance",
+    "otherRevenues": 3000,
+    "otherRevenueType": "rente",
+    "maritalStatus": "married",
+    "phoneNumber": "+33 3 56 87 22 88"
+  }
+]
