@@ -1,8 +1,8 @@
-import { createIcon } from "@chakra-ui/icons";
+import { createIcon } from '@chakra-ui/icons';
 
 export const AgenceIcon = createIcon({
-  displayName: "Agence",
-  viewBox: "0 0 14 15",
+  displayName: 'Agence',
+  viewBox: '0 0 14 15',
 
   path: (
     <>
@@ -49,8 +49,8 @@ export const AgenceIcon = createIcon({
 });
 
 export const BuildingIcon = createIcon({
-  displayName: "Building",
-  viewBox: "0 0 14 15",
+  displayName: 'Building',
+  viewBox: '0 0 14 15',
 
   path: (
     <>
@@ -88,8 +88,8 @@ export const BuildingIcon = createIcon({
 });
 
 export const HomeIcon = createIcon({
-  displayName: "Home",
-  viewBox: "0 0 14 15",
+  displayName: 'Home',
+  viewBox: '0 0 14 15',
 
   path: (
     <>
@@ -130,8 +130,8 @@ export const HomeIcon = createIcon({
 });
 
 export const UserPlusOneIcon = createIcon({
-  displayName: "UserPlusOne",
-  viewBox: "0 0 14 15",
+  displayName: 'UserPlusOne',
+  viewBox: '0 0 14 15',
 
   path: (
     <>
@@ -182,8 +182,8 @@ export const UserPlusOneIcon = createIcon({
 });
 
 export const SettingsIcon = createIcon({
-  displayName: "Settings",
-  viewBox: "0 0 14 15",
+  displayName: 'Settings',
+  viewBox: '0 0 14 15',
 
   path: (
     <>
@@ -208,8 +208,8 @@ export const SettingsIcon = createIcon({
 });
 
 export const QeepsPassportIcon = createIcon({
-  displayName: "PassportIcon",
-  viewBox: "0 0 22 23",
+  displayName: 'PassportIcon',
+  viewBox: '0 0 22 23',
 
   path: (
     <>
@@ -271,8 +271,8 @@ export const QeepsPassportIcon = createIcon({
 });
 
 export const ListsNumbersIcon = createIcon({
-  displayName: "ListNumbers",
-  viewBox: "0 0 16 17",
+  displayName: 'ListNumbers',
+  viewBox: '0 0 16 17',
 
   path: (
     <>
@@ -323,8 +323,8 @@ export const ListsNumbersIcon = createIcon({
 });
 
 export const FormOneIcon = createIcon({
-  displayName: "FormOne",
-  viewBox: "0 0 16 17",
+  displayName: 'FormOne',
+  viewBox: '0 0 16 17',
 
   path: (
     <>
@@ -389,8 +389,8 @@ export const FormOneIcon = createIcon({
 });
 
 export const EveryUserIcon = createIcon({
-  displayName: "EveryUser",
-  viewBox: "0 0 16 17",
+  displayName: 'EveryUser',
+  viewBox: '0 0 16 17',
 
   path: (
     <>
@@ -447,8 +447,8 @@ export const EveryUserIcon = createIcon({
 });
 
 export const PeopleSafeIcon = createIcon({
-  displayName: "PeopleSafe",
-  viewBox: "0 0 16 17",
+  displayName: 'PeopleSafe',
+  viewBox: '0 0 16 17',
 
   path: (
     <>
@@ -480,8 +480,8 @@ export const PeopleSafeIcon = createIcon({
 });
 
 export const CheckOneIcon = createIcon({
-  displayName: "CheckOne",
-  viewBox: "0 0 10 10",
+  displayName: 'CheckOne',
+  viewBox: '0 0 10 10',
 
   path: (
     <>
@@ -510,8 +510,8 @@ export const CheckOneIcon = createIcon({
 });
 
 export const DocumentFolderIcon = createIcon({
-  displayName: "Document",
-  viewBox: "0 0 17 17",
+  displayName: 'Document',
+  viewBox: '0 0 17 17',
 
   path: (
     <>
@@ -555,8 +555,8 @@ export const DocumentFolderIcon = createIcon({
 });
 
 export const IdCardVIcon = createIcon({
-  displayName: "IcardV",
-  viewBox: "0 0 12 12",
+  displayName: 'IcardV',
+  viewBox: '0 0 12 12',
 
   path: (
     <>
@@ -598,8 +598,8 @@ export const IdCardVIcon = createIcon({
 });
 
 export const PaperMoneyIcon = createIcon({
-  displayName: "PaperMoney",
-  viewBox: "0 0 16 16",
+  displayName: 'PaperMoney',
+  viewBox: '0 0 16 16',
 
   path: (
     <>
@@ -670,8 +670,8 @@ export const PaperMoneyIcon = createIcon({
 });
 
 export const UserIcon = createIcon({
-  displayName: "User",
-  viewBox: "0 0 16 17",
+  displayName: 'User',
+  viewBox: '0 0 16 17',
 
   path: (
     <>
@@ -696,8 +696,8 @@ export const UserIcon = createIcon({
 });
 
 export const InfoProIcon = createIcon({
-  displayName: "Informations Professionnelles",
-  viewBox: "0 0 14 14",
+  displayName: 'Informations Professionnelles',
+  viewBox: '0 0 14 14',
 
   path: (
     <>
@@ -727,8 +727,8 @@ export const InfoProIcon = createIcon({
 });
 
 export const InfoPersoIcon = createIcon({
-  displayName: "Informations Personnelles",
-  viewBox: "0 0 14 14",
+  displayName: 'Informations Personnelles',
+  viewBox: '0 0 14 14',
 
   path: (
     <>
@@ -765,8 +765,8 @@ export const InfoPersoIcon = createIcon({
 });
 
 export const BriefCaseIcon = createIcon({
-  displayName: "Briefcase",
-  viewBox: "0 0 12 12",
+  displayName: 'Briefcase',
+  viewBox: '0 0 12 12',
 
   path: (
     <>
@@ -804,8 +804,8 @@ export const BriefCaseIcon = createIcon({
 });
 
 export const QeepsSquareFullIcon = createIcon({
-  displayName: "Briefcase",
-  viewBox: "0 0 96 96",
+  displayName: 'Briefcase',
+  viewBox: '0 0 96 96',
 
   path: (
     <>
@@ -828,8 +828,8 @@ export const QeepsSquareFullIcon = createIcon({
 });
 
 export const FileStaffIcon = createIcon({
-  displayName: "FileStaff",
-  viewBox: "0 0 12 12",
+  displayName: 'FileStaff',
+  viewBox: '0 0 12 12',
 
   path: (
     <>
@@ -866,8 +866,8 @@ export const FileStaffIcon = createIcon({
 });
 
 export const TelephoneIcon = createIcon({
-  displayName: "Telephone",
-  viewBox: "0 0 12 12",
+  displayName: 'Telephone',
+  viewBox: '0 0 12 12',
 
   path: (
     <>
@@ -900,8 +900,8 @@ export const TelephoneIcon = createIcon({
 });
 
 export const EmailIcon = createIcon({
-  displayName: "Email",
-  viewBox: "0 0 12 12",
+  displayName: 'Email',
+  viewBox: '0 0 12 12',
 
   path: (
     <>
@@ -954,8 +954,8 @@ export const EmailIcon = createIcon({
 });
 
 export const MoneyIcon = createIcon({
-  displayName: "Money",
-  viewBox: "0 0 16 16",
+  displayName: 'Money',
+  viewBox: '0 0 16 16',
 
   path: (
     <>
