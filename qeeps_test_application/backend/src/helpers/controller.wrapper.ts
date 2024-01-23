@@ -1,7 +1,6 @@
 import { ApiError, HttpCode } from "../errors/api.error";
 import { Request, Response, NextFunction } from "express";
 
-
 export type Controller = (
   req: Request,
   res: Response,
@@ -20,13 +19,12 @@ export default (controller: Controller) =>
             httpCode: HttpCode.INTERNAL_SERVER_ERROR,
           })
         );
-      } else {
-      }
-      next(
-        new ApiError({
-          description: "Something went wrong",
-          httpCode: HttpCode.INTERNAL_SERVER_ERROR,
-        })
-      );
+      } else
+        next(
+          new ApiError({
+            description: "Something went wrong",
+            httpCode: HttpCode.INTERNAL_SERVER_ERROR,
+          })
+        );
     }
   };

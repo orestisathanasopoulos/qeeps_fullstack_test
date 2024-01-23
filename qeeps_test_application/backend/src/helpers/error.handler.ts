@@ -1,13 +1,13 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { ApiError } from "../errors/api.error";
 import { NextFunction, Request, Response } from "express";
 
 export default (
   err: unknown | Error | ApiError,
-  req: Request,
+  _req: Request,
   res: Response,
-  next: NextFunction
+  _next: NextFunction
 ) => {
-
   const thisError = err as ApiError;
 
   const status = thisError.httpCode || 500;

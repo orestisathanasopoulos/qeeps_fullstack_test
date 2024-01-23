@@ -1,8 +1,13 @@
+/* eslint-disable promise/no-nesting */
+/* eslint-disable promise/always-return */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable promise/catch-or-return */
 import { NextFunction, Request, Response } from "express";
 import mongoose, { Document, Model } from "mongoose";
 
 const create =
-  (model: Model<any>) => (req: Request, res: Response, next: NextFunction) => {
+  (model: Model<unknown>) =>
+  (req: Request, res: Response, next: NextFunction) => {
     console.log(`New ${model.modelName}`);
 
     const doc = new model({
@@ -10,11 +15,13 @@ const create =
       ...req.body,
     });
 
-    return doc.save().then((result: any) => res.status(201).json({ result }));
+    return doc
+      .save()
+      .then((result: unknown) => res.status(201).json({ result }));
   };
 
 const getAll =
-  (model: Model<any>, populate?: string[]) =>
+  (model: Model<unknown>, populate?: string[]) =>
   async (req: Request, res: Response, next: NextFunction) => {
     console.log(`Getting all documents from ${model.modelName}`);
 
@@ -26,7 +33,7 @@ const getAll =
   };
 
 const getById =
-  (model: Model<any>, populate?: string[]) =>
+  (model: Model<unknown>, populate?: string[]) =>
   (req: Request, res: Response, next: NextFunction) => {
     console.log(`Getting document from ${model.modelName} by ID`);
 
@@ -45,7 +52,7 @@ const getById =
   };
 
 const updateOne =
-  (model: Model<any>, populate?: string[]) =>
+  (model: Model<unknown>, populate?: string[]) =>
   (req: Request, res: Response, next: NextFunction) => {
     console.log(`Updating document from ${model.modelName} by ID`);
 
@@ -59,14 +66,14 @@ const updateOne =
           return next();
         }
         results.set(req.body);
-        return results.save().then((results) => {
-          res.status(200).json({ results });
+        results.save().then((results) => {
+          return res.status(200).json({ results });
         });
       });
   };
 
 const deleteOne =
-  (model: Model<any>, populate?: string[]) =>
+  (model: Model<unknown>, populate?: string[]) =>
   (req: Request, res: Response, next: NextFunction) => {
     console.log(`Updating document from ${model.modelName} by ID`);
 
