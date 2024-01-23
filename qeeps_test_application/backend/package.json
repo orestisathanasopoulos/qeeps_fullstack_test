@@ -49,7 +49,7 @@
   "scripts": {
     "test": "jest",
     "dev": "nodemon",
-    "lint": "npx eslint '**/*.ts'"
+    "lint": "eslint '**/*.ts'"
   },
   "keywords": [],
   "author": "",
