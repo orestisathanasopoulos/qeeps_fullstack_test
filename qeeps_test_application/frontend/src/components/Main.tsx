@@ -14,8 +14,6 @@ export default function AgentPageTitle() {
   useEffect(() => {
     const fetchCandidateData = async () => {
       try {
-        console.log(process.env.REACT_APP_API_BASE_URL);
-
         const res = await fetch(
           `${process.env.REACT_APP_API_BASE_URL}/candidates`
         );

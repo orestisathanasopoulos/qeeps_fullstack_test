@@ -4,6 +4,11 @@ import { ListsNumbersIcon } from '../../icons/icons';
 import { KpiCard } from './KpiCard';
 
 export function Kpis({ candidate }: { candidate: ICandidate }) {
+  
+  const guarantorTotalSalary = candidate.guarantorIds?.reduce(
+    (accumulator, guarantor) => accumulator + guarantor.monthlyJobRevenues,
+    0
+  );
   return (
     <VStack align={'flex-start'} marginTop={'1rem'} w={'100%'} paddingRight={3}>
       <Flex gap="0.5rem" align={'center'}>
@@ -28,7 +33,7 @@ export function Kpis({ candidate }: { candidate: ICandidate }) {
           style={{ flexGrow: 1 }}
         />
         <KpiCard
-          mainText={`${candidate.guarantorIds?.length} €`}
+          mainText={`${guarantorTotalSalary} €`}
           subTitle="NET MENSUEL GARANT"
           thirdText="(avant impôts)"
           style={{ flexGrow: 1 }}
