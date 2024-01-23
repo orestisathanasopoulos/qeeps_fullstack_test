@@ -61,7 +61,7 @@ export default function AgentPageTitle() {
         </Text>
         <ProfileOverview candidate={candidate} />
         <Kpis candidate={candidate} />
-        <MenuButtonGroup candidate={candidate} documents={true} />
+        <MenuButtonGroup candidate={candidate} showDocuments={true} />
       </VStack>
     );
   } else return <></>;

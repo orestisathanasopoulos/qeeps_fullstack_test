@@ -3,6 +3,7 @@ import { Box, Card, Flex, Heading } from "@chakra-ui/react";
 import { ICandidate } from "../../../types/candidate";
 import {
   DocumentFolderIcon,
+  EmailIcon,
   FileStaffIcon,
   IdCardVIcon,
   InfoPersoIcon,
@@ -16,7 +17,7 @@ import {
   DetailInformationCard,
   
 } from "./DetailInformationCard";
-import { EmailIcon } from "@chakra-ui/icons";
+
 
 interface mainCandidatePanelProps {
   candidate: ICandidate;

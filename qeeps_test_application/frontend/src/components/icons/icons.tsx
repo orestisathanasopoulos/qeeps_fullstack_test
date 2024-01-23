@@ -867,16 +867,11 @@ export const FileStaffIcon = createIcon({
 
 export const TelephoneIcon = createIcon({
   displayName: 'Telephone',
-  viewBox: '0 0 12 12',
+  viewBox: '0 0 16 17',
 
   path: (
     <>
       <g clipPath="url(#clip0_1_1211)">
-        <path
-          fill="none"
-          d="M15.8367 0.5H0.163269V16.1735H15.8367V0.5Z"
-          fillOpacity="0.01"
-        />
         <path
           fill="none"
           d="M5.71307 3.00964C5.9503 3.00964 6.16887 3.1383 6.28404 3.34573L7.08287 4.78469C7.18745 4.97309 7.19239 5.20098 7.09599 5.39373L6.32643 6.9329C6.32643 6.9329 6.54945 8.07948 7.4828 9.01283C8.41619 9.94619 9.55892 10.1654 9.55892 10.1654L11.0978 9.39592C11.2907 9.29946 11.5188 9.30446 11.7072 9.40924L13.1503 10.2115C13.3575 10.3268 13.486 10.5452 13.486 10.7823V12.439C13.486 13.2826 12.7024 13.892 11.903 13.6222C10.2612 13.0682 7.71274 12.0135 6.09746 10.3982C4.48218 8.78289 3.4274 6.23442 2.87343 4.59265C2.60371 3.79327 3.21304 3.00964 4.05668 3.00964H5.71307Z"
@@ -901,12 +896,11 @@ export const TelephoneIcon = createIcon({
 
 export const EmailIcon = createIcon({
   displayName: 'Email',
-  viewBox: '0 0 12 12',
+  viewBox: '0 0 16 17',
 
   path: (
     <>
       <g clipPath="url(#clip0_1_1217)">
-        <path fill="none" d="M16 0.5H0V16.5H16V0.5Z" fillOpacity="0.01" />
         <path
           fill="none"
           d="M1.33334 13.5H14.6667V8.5V3.5H8.00001H1.33334V8.5V13.5Z"
@@ -941,12 +935,7 @@ export const EmailIcon = createIcon({
       </g>
       <defs>
         <clipPath id="clip0_1_1217">
-          <rect
-            width="16"
-            height="16"
-            fill="white"
-            transform="translate(0 0.5)"
-          />
+          <rect width="16" height="16" fill="none" transform="translate(0 0)" />
         </clipPath>
       </defs>
     </>
@@ -960,7 +949,6 @@ export const MoneyIcon = createIcon({
   path: (
     <>
       <g clipPath="url(#clip0_1_1252)">
-        <path fill="none" d="M16 0H0V16H16V0Z" fillOpacity="0.01" />
         <path
           fill="none"
           d="M1.33334 4.33331H14.6667V12.3333H1.33334V4.33331Z"

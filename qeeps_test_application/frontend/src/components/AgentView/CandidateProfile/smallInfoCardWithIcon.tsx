@@ -9,11 +9,11 @@ import {
   Text,
   ComponentWithAs,
   IconProps,
-} from "@chakra-ui/react";
-import { CheckOneIcon } from "../../icons/icons";
+} from '@chakra-ui/react';
+import { CheckOneIcon } from '../../icons/icons';
 
 interface infoCardProps {
-  icon: ComponentWithAs<"svg", IconProps>;
+  icon: ComponentWithAs<'svg', IconProps>;
   iconColor: string;
   tagText: string;
   tagTextIcon?: boolean;
@@ -31,18 +31,18 @@ export function SmallInfoCardWithIcon({
   tagBackgroundColor,
 }: infoCardProps) {
   return (
-    <Card minW={"16%"}>
+    <Card minW={'16%'}>
       <CardHeader />
       <CardBody>
-        <VStack height={"100%"} justify={"center"}>
+        <VStack height={'100%'} justify={'center'}>
           <Tag size="lg" backgroundColor={tagBackgroundColor}>
             <TagLeftIcon as={icon} color={iconColor} />
             <TagLabel color={iconColor} fontWeight="600">
-              {candidateProperty ? candidateProperty : ""}
+              {candidateProperty}
             </TagLabel>
           </Tag>
           <Text color="qeeps.main" fontSize="0.625rem" fontWeight="300">
-            {tagText} {tagTextIcon ? <CheckOneIcon /> : ""}
+            {tagText} {tagTextIcon ? <CheckOneIcon /> : ''}
           </Text>
         </VStack>
       </CardBody>
