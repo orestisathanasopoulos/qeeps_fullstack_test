@@ -25,6 +25,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: qeeps_test_application/backend/package-lock.json
         
     - run: npm ci
     - run: npm run lint 
@@ -50,6 +51,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: qeeps_test_application/frontend/package-lock.json
         
     - run: npm ci
     - run: npm run lint 
