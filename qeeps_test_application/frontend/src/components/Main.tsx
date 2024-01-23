@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
 import { Flex, Heading, Tag, Text, VStack } from '@chakra-ui/react';
-import { QeepsPassportIcon } from '../icons/icons';
+import { QeepsPassportIcon } from './icons/icons';
 import { ProfileOverview } from './AgentView/CandidateProfile/ProfileOverview';
-import { Kpis } from './KPIs/Kpis';
+import { Kpis } from './AgentView/KPIs/Kpis';
 import { MenuButtonGroup } from './AgentView/Details/DetailMenu';
 import { ICandidate } from '../types/candidate';
 
 export default function AgentPageTitle() {
   const [candidate, setCandidate] = useState<ICandidate>();
+  const [loading, setLoading] = useState(true);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchCandidateData = async () => {
@@ -18,17 +20,24 @@ export default function AgentPageTitle() {
           `${process.env.REACT_APP_API_BASE_URL}/candidates`
         );
         const candidates = await res.json();
+        setLoading(false);
         setCandidate(candidates.results[0]);
-      } catch (error) {
+      } catch (error: unknown | Error) {
         if (error instanceof Error) {
-          console.error(error.message);
+          console.log(error);
+          setErrorMessage(error.message);
         }
       }
     };
-
     fetchCandidateData();
   }, []);
 
+  if (errorMessage) {
+    return <div>{errorMessage}</div>;
+  }
+  if (loading) {
+    return <div>Data loading...</div>;
+  }
   if (candidate) {
     return (
       <VStack align={'flex-start'} w="100%">
@@ -57,5 +66,5 @@ export default function AgentPageTitle() {
         <MenuButtonGroup candidate={candidate} documents={true} />
       </VStack>
     );
-  } else return <div>Candidate not found</div>;
+  } else return <></>;
 }

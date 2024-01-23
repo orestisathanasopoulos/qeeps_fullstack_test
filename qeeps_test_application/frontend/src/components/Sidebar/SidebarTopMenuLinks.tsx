@@ -1,5 +1,5 @@
 import { VStack, Flex, Heading, Link } from '@chakra-ui/react';
-import { AgenceIcon, BuildingIcon, HomeIcon } from '../../icons/icons';
+import { AgenceIcon, BuildingIcon, HomeIcon } from '../icons/icons';
 
 export function SidebarTopMenuLinks() {
   return (
