@@ -4,28 +4,31 @@ import Main from '../components/Main';
 import axios from 'axios';
 import { mockCandidate } from '../__mocks__/candidate';
 
+describe('Testing the <Main> component', () => {
+  const jestCandidate = jest.mocked(mockCandidate);
+  afterAll(() => jest.clearAllMocks());
 
-const jestCandidate = jest.mocked(mockCandidate);
-afterAll(() => jest.clearAllMocks());
+  test('should handle API fetch errors and set error message state', async () => {
+    jest
+      .spyOn(axios, 'get')
+      .mockRejectedValueOnce(new Error('API fetch issue'));
 
-test('should handle API fetch errors and set error message state', async () => {
-  jest.spyOn(axios, 'get').mockRejectedValueOnce(new Error('API fetch issue'));
+    render(<Main />);
 
-  render(<Main />);
-
-  waitFor(() => {
-    expect(screen.getByText('Error:API fetch issue')).toBeInTheDocument;
+    waitFor(() => {
+      expect(screen.getByText('Error:API fetch issue')).toBeInTheDocument;
+    });
+    expect(axios.get).toBeCalledTimes(1);
   });
-  expect(axios.get).toBeCalledTimes(1);
-});
 
-test('should handle API fetch errors and set error message state', async () => {
-  jest.spyOn(axios, 'get').mockResolvedValue([mockCandidate]);
+  test('should display data received from the API', async () => {
+    jest.spyOn(axios, 'get').mockResolvedValue([mockCandidate]);
 
-  render(<Main />);
+    render(<Main />);
 
-  waitFor(() => {
-    expect(screen.getByText('Bricard')).toBeInTheDocument;
+    waitFor(() => {
+      expect(screen.getByText('Bricard')).toBeInTheDocument;
+    });
+    expect(axios.get).toBeCalledTimes(1);
   });
-  expect(axios.get).toBeCalledTimes(1);
 });
