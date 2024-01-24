@@ -1,0 +1,52 @@
+[
+  {
+    "contractType": "CDI",
+    "firstName": "Fabrice",
+    "lastName": "Bricard",
+    "email": "fabien.bricard@mail.com",
+    "dateOfBirth": "1990-01-01",
+    "address": "123 Maple Street",
+    "monthlyJobRevenues": 3500,
+    "otherRevenues": 0,
+    "otherRevenuesType": "rente",
+    "job": "Software Engineer",
+    "coCandidates": ["1", "2"],
+    "maritalStatus": "single",
+    "guarantorIds": ["60b1f8aaad23be4acdaa58fa", "60b1f8aabd23be4acdaa58f9"],
+    "workingSince": "2022-01-01",
+    "phoneNumber": "+33 7 78 52 45 94"
+  },
+  {
+    "contractType": "CDD",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "email": "janesmith@example.com",
+    "dateOfBirth": "1990-01-01",
+    "address": "456 Elm St.",
+    "monthlyJobRevenues": 3000,
+    "otherRevenues": 1000,
+    "otherRevenuesType": "rente",
+    "job": "Graphic Designer",
+    "coCandidates": [],
+    "maritalStatus": "single",
+    "workingSince": "2022-01-01",
+    "guarantorIds": [],
+    "phoneNumber": "+33 3 43 32 22 15"
+  },
+  {
+    "contractType": "Freelance",
+    "firstName": "Mike",
+    "lastName": "Anderson",
+    "email": "mikeanderson@example.com",
+    "dateOfBirth": "1990-01-01",
+    "address": "789 Oak St.",
+    "monthlyJobRevenues": 0,
+    "otherRevenues": 1500,
+    "otherRevenuesType": "parents",
+    "job": "Student",
+    "coCandidates": [],
+    "maritalStatus": "civil partnership",
+    "guarantorIds": [],
+    "phoneNumber": "+33 1 22 35 63 88"
+  }
+]
