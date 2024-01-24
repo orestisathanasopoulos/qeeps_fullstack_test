@@ -8,6 +8,7 @@
     "address": "123 Maple Street",
     "monthlyJobRevenues": 3500,
     "otherRevenues": 0,
+    "otherRevenuesType": "rente",
     "job": "Software Engineer",
     "coCandidates": ["1", "2"],
     "maritalStatus": "single",
@@ -33,7 +34,7 @@
     "phoneNumber": "+33 3 43 32 22 15"
   },
   {
-    "contractType": "CDD",
+    "contractType": "Freelance",
     "firstName": "Mike",
     "lastName": "Anderson",
     "email": "mikeanderson@example.com",
@@ -41,9 +42,10 @@
     "address": "789 Oak St.",
     "monthlyJobRevenues": 0,
     "otherRevenues": 1500,
+    "otherRevenuesType": "parents",
     "job": "Student",
-    "flatshare": "Yes",
-    "situation": "Living with parents",
+    "coCandidates": [],
+    "maritalStatus": "civil partnership",
     "guarantorIds": [],
     "phoneNumber": "+33 1 22 35 63 88"
   }

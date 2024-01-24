@@ -20,7 +20,6 @@ export interface ICandidate extends Document {
 }
 
 export const CandidateSchema = new Schema({
-  type: { type: String, required: true },
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
   phoneNumber: { type: String, required: true },
@@ -32,10 +31,7 @@ export const CandidateSchema = new Schema({
   otherRevenuesType: { type: String, default: "" },
   job: { type: String, required: true },
   contractType: { type: String, required: true },
-  situation: { type: String, required: true },
   guarantorIds: [{ type: Schema.Types.ObjectId, ref: "Guarantor" }],
   coCandidates: [{ type: String }],
   workingSince: { type: Date },
 });
-
-

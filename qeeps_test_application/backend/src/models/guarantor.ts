@@ -9,12 +9,12 @@ export interface IGuarantor extends Document {
   dateOfBirth: Date;
   maritalStatus: "single" | "married" | "civil partnership";
   address: string;
-  monthlyRevenues: number;
   job: string;
   monthlyJobRevenues: number;
   contractType: "CDI" | "CDD" | "Freelance" | "Other";
   otherRevenues: number;
   otherRevenuesType: string | undefined;
+  workingSince: Date;
 }
 
 export const GuarantorSchema = new Schema({
@@ -24,6 +24,7 @@ export const GuarantorSchema = new Schema({
   email: { type: String, required: true, unique: true },
   dateOfBirth: { type: Date, required: true },
   address: { type: String, required: true },
+  maritalStatus: { type: String, required: true },
   monthlyJobRevenues: { type: Number, required: true },
   otherRevenues: { type: Number, required: true },
   otherRevenuesType: { type: String, required: true },

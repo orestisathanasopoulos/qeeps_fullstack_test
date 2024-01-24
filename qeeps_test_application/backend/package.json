@@ -51,7 +51,8 @@
     "test": "jest",
     "dev": "nodemon",
     "lint": "eslint '**/*.ts'",
-    "start": "npx ts-node ./src/index.ts"
+    "start": "npx ts-node ./src/index.ts",
+    "db:reset": "npx ts-node ./seed_data/seeding.ts"
   },
   "keywords": [],
   "author": "",
