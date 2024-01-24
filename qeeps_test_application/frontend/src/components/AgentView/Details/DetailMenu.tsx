@@ -1,8 +1,6 @@
-import React from 'react';
 import {
   Icon,
   Tab,
-  TabIndicator,
   TabList,
   TabPanel,
   TabPanels,
@@ -12,7 +10,6 @@ import {
 } from '@chakra-ui/react';
 import {
   IdCardVIcon,
-  PeopleSafeIcon,
   EveryUserIcon,
   DocumentFolderIcon,
   CheckOneIcon,
@@ -20,7 +17,6 @@ import {
 import { MainCandidatePanel } from './MainCandidatePanel';
 import { GuarantorCollapse } from './DetailDropdown';
 import { ICandidate } from '../../../types/candidate';
-import { text } from 'express';
 
 interface MenuButtonGroupProps {
   candidate: ICandidate;
@@ -105,7 +101,7 @@ export function MenuButtonGroup({
           <MainCandidatePanel candidate={candidate} />
         </TabPanel>
         <TabPanel>
-          <p>Co-candidats</p>
+          <p>candidats</p>
         </TabPanel>
         <TabPanel w={'100%'} p={0}>
           {guarantors}

@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Flex, Heading, Tag, Text, VStack } from '@chakra-ui/react';
 import { QeepsPassportIcon } from './icons/icons';
@@ -14,10 +15,10 @@ export default function AgentPageTitle() {
   useEffect(() => {
     const fetchCandidateData = async () => {
       try {
-        const res = await fetch(
+        const res = await axios.get(
           `${process.env.REACT_APP_API_BASE_URL}/candidates`
         );
-        const candidates = await res.json();
+        const candidates = res.data;
         setLoading(false);
         setCandidate(candidates.results[0]);
       } catch (error: unknown | Error) {
@@ -31,7 +32,7 @@ export default function AgentPageTitle() {
   }, []);
 
   if (errorMessage) {
-    return <div>{errorMessage}</div>;
+    return <div>Error:{errorMessage}</div>;
   }
   if (loading) {
     return <div>Data loading...</div>;
