@@ -25,6 +25,7 @@ export const CandidateSchema = new Schema({
   phoneNumber: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   dateOfBirth: { type: Date, required: true },
+  maritalStatus: { type: String, required: true },
   address: { type: String, required: true },
   monthlyJobRevenues: { type: Number, required: true },
   otherRevenues: { type: Number, default: 0 },

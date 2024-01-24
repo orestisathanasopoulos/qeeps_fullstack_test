@@ -71,7 +71,6 @@ export function ProfileCard({ candidate }: ProfileCardProps) {
             ) : (
               ""
             )}
-            {/* TODO FIX ICON COLORS */}
             {currentDocs ? (
               <MiniTag
                 icon={FileStaffIcon}

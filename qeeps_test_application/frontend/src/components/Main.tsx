@@ -7,7 +7,7 @@ import { Kpis } from './AgentView/KPIs/Kpis';
 import { MenuButtonGroup } from './AgentView/Details/DetailMenu';
 import { ICandidate } from '../types/candidate';
 
-export default function AgentPageTitle() {
+export default function AgentViewMain() {
   const [candidate, setCandidate] = useState<ICandidate>();
   const [loading, setLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);

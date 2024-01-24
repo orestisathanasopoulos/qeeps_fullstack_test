@@ -1,6 +1,6 @@
 import { screen, act, waitFor } from '@testing-library/react';
 import { render } from '../test-utils';
-import AgentPageTitle from '../components/Main';
+import Main from '../components/Main';
 import axios from 'axios';
 import { mockCandidate } from '../__mocks__/candidate';
 
@@ -11,7 +11,7 @@ afterAll(() => jest.clearAllMocks());
 test('should handle API fetch errors and set error message state', async () => {
   jest.spyOn(axios, 'get').mockRejectedValueOnce(new Error('API fetch issue'));
 
-  render(<AgentPageTitle />);
+  render(<Main />);
 
   waitFor(() => {
     expect(screen.getByText('Error:API fetch issue')).toBeInTheDocument;
@@ -22,7 +22,7 @@ test('should handle API fetch errors and set error message state', async () => {
 test('should handle API fetch errors and set error message state', async () => {
   jest.spyOn(axios, 'get').mockResolvedValue([mockCandidate]);
 
-  render(<AgentPageTitle />);
+  render(<Main />);
 
   waitFor(() => {
     expect(screen.getByText('Bricard')).toBeInTheDocument;

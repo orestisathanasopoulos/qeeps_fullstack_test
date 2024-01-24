@@ -1012,3 +1012,48 @@ export const MoneyIcon = createIcon({
     </>
   ),
 });
+
+export const EmailDownloadlIcon = createIcon({
+  displayName: 'Email',
+  viewBox: '0 0 12 12',
+
+  path: (
+    <>
+      <path
+        fill="none"
+        d="M2.5 4.5H1V10.5H11V4.5H9.5"
+        stroke="#405858"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        fill="none"
+        d="M9.5 1.5H2.5V5.625L6 8.25L9.5 5.625V1.5Z"
+        stroke="#405858"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        fill="none"
+        d="M11 4.5L9.5 5.625L6 8.25L2.5 5.625L1 4.5"
+        stroke="#405858"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        fill="none"
+        d="M4.75 4.75L6 6L7.25 4.75"
+        stroke="#405858"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        fill="none"
+        d="M6 6V3.25"
+        stroke="#405858"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </>
+  ),
+});

@@ -49,7 +49,7 @@
   },
   "scripts": {
     "test": "jest",
-    "dev": "nodemon",
+    "dev": "npx nodemon",
     "lint": "eslint '**/*.ts'",
     "start": "npx ts-node ./src/index.ts",
     "db:reset": "npx ts-node ./seed_data/seeding.ts"

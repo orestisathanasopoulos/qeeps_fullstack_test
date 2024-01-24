@@ -1,6 +1,6 @@
 import React from 'react';
 import { IGuarantor } from '../../../types/guarantor';
-import { ChevronDownIcon, ChevronUpIcon, EmailIcon } from '@chakra-ui/icons';
+import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons';
 import {
   Box,
   Card,
@@ -22,6 +22,7 @@ import {
   DocumentFolderIcon,
   MoneyIcon,
   QeepsSquareFullIcon,
+  EmailIcon,
 } from '../../icons/icons';
 import { MiniTag } from '../CandidateProfile/MiniTag';
 import { DetailInformationCard } from './DetailInformationCard';
